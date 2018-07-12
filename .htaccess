@@ -141,17 +141,17 @@
 ############################################
 ## set magento website varialbes
 
-SetEnvIf Host "cricketvic\.clearbridge\.com\.au" MAGE_RUN_CODE="base"
-SetEnvIf Host "cricketvic\.clearbridge\.com\.au" MAGE_RUN_TYPE="website"
+SetEnvIf Host "store\.clearbridge\.com\.au" MAGE_RUN_CODE="base"
+SetEnvIf Host "store\.clearbridge\.com\.au" MAGE_RUN_TYPE="website"
 
 SetEnvIf Host "cricketvic\.clearbridge\.com\.au" MAGE_RUN_CODE="cricketvic"
 SetEnvIf Host "cricketvic\.clearbridge\.com\.au" MAGE_RUN_TYPE="website"
 
-SetEnvIf Host "cricketvic\.clearbridge\.com\.au" MAGE_RUN_CODE="gscc"
-SetEnvIf Host "cricketvic\.clearbridge\.com\.au" MAGE_RUN_TYPE="website"
+SetEnvIf Host "gscc\.clearbridge\.com\.au" MAGE_RUN_CODE="gscc"
+SetEnvIf Host "gscc\.clearbridge\.com\.au" MAGE_RUN_TYPE="website"
 
-SetEnvIf Host "cricketvic\.clearbridge\.com\.au" MAGE_RUN_CODE="wellways"
-SetEnvIf Host "cricketvic\.clearbridge\.com\.au" MAGE_RUN_TYPE="website"
+SetEnvIf Host "wellways\.clearbridge\.com\.au" MAGE_RUN_CODE="wellways"
+SetEnvIf Host "wellways\.clearbridge\.com\.au" MAGE_RUN_TYPE="website"
 
 ############################################
 ## you can put here your magento root folder
