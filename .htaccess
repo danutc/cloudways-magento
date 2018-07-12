@@ -139,11 +139,19 @@
     RewriteEngine on
 
 ############################################
-## set magento varialbes
+## set magento website varialbes
 
-SetEnvIf Host "cricketvic\.clearbridge\.com\.au" MAGE_RUN_CODE="cricketvic_website"
+SetEnvIf Host "cricketvic\.clearbridge\.com\.au" MAGE_RUN_CODE="store"
 SetEnvIf Host "cricketvic\.clearbridge\.com\.au" MAGE_RUN_TYPE="website"
 
+SetEnvIf Host "cricketvic\.clearbridge\.com\.au" MAGE_RUN_CODE="cricketvic"
+SetEnvIf Host "cricketvic\.clearbridge\.com\.au" MAGE_RUN_TYPE="website"
+
+SetEnvIf Host "cricketvic\.clearbridge\.com\.au" MAGE_RUN_CODE="gscc"
+SetEnvIf Host "cricketvic\.clearbridge\.com\.au" MAGE_RUN_TYPE="website"
+
+SetEnvIf Host "cricketvic\.clearbridge\.com\.au" MAGE_RUN_CODE="wellways"
+SetEnvIf Host "cricketvic\.clearbridge\.com\.au" MAGE_RUN_TYPE="website"
 
 ############################################
 ## you can put here your magento root folder
