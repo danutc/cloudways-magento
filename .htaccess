@@ -139,11 +139,11 @@
     RewriteEngine on
 
 ############################################
-## force https
+## set magento varialbes
 
-RewriteCond %{HTTPS} off
+SetEnvIf Host "cricketvic\.clearbridge\.com\.au" MAGE_RUN_CODE="cricketvic_website"
+SetEnvIf Host "cricketvic\.clearbridge\.com\.au" MAGE_RUN_TYPE="website"
 
-RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
 
 ############################################
 ## you can put here your magento root folder
