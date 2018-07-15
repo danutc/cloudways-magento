@@ -33,35 +33,7 @@ HTML;
     exit(1);
 }
 
-
-$params = $_SERVER;
-
-switch($_SERVER['HTTP_HOST']) {
-
-        case 'cricketvic.clearbridge.com.au':
-             $params[\Magento\Store\Model\StoreManager::PARAM_RUN_CODE] = 'cricketvic';
-             $params[\Magento\Store\Model\StoreManager::PARAM_RUN_TYPE] = 'website';
-        break;
-
-        case 'gscc.clearbridge.com.au':
-             $params[\Magento\Store\Model\StoreManager::PARAM_RUN_CODE] = 'gscc';
-             $params[\Magento\Store\Model\StoreManager::PARAM_RUN_TYPE] = 'website';
-        break;
-
-        case 'store.clearbridge.com.au':
-             $params[\Magento\Store\Model\StoreManager::PARAM_RUN_CODE] = 'store';
-             $params[\Magento\Store\Model\StoreManager::PARAM_RUN_TYPE] = 'website';
-        break;
-
-        case 'wellways.clearbridge.com.au':
-             $params[\Magento\Store\Model\StoreManager::PARAM_RUN_CODE] = 'wellways';
-             $params[\Magento\Store\Model\StoreManager::PARAM_RUN_TYPE] = 'website';
-        break;
-    }
-
-$bootstrap = \Magento\Framework\App\Bootstrap::create(BP, $params);
-
-// $bootstrap = \Magento\Framework\App\Bootstrap::create(BP, $_SERVER);
+$bootstrap = \Magento\Framework\App\Bootstrap::create(BP, $_SERVER);
 /** @var \Magento\Framework\App\Http $app */
 $app = $bootstrap->createApplication(\Magento\Framework\App\Http::class);
 $bootstrap->run($app);
